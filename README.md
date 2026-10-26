@@ -10,11 +10,15 @@ An image is fetched twice. I enter two requests. Anyone demanding two culprits c
 
 **Prototype in active development.** The public checkout currently contains the assessment, deployment design, synthetic observations and new artwork. A runnable local collector and operator console are being tested before the implementation lands here. No production deployment or live messaging-platform result is claimed.
 
-## The story belongs to The Duelist
+## Social engineer the social engineer
 
-Someone hurt an older person in my family. I placed canaries after the scam and followed a trail. The account, the conclusions I drew, the conversations with police, and the challenge to Google are in [“The Duelist”](https://ghostintheprompt.com/articles/report-phishing-call-311). [“A Canary in the Group Chat”](https://ghostintheprompt.com/articles/any-confession-is-a-canary) covers the image-link side.
+Alessandro Nesta. For me, the greatest defender the Azzurri have had. I used his photo in his honor, and because I knew il vecchio and the thief would both want to open it.
 
-This companion makes the request evidence inspectable. A preview service, a relay, a retry and a direct open can all reach an endpoint. The record has to preserve those possibilities. A timestamp does not acquire a face because somebody wants a suspect.
+That was the bait. It worked.
+
+Someone had socially engineered a person I love. I chose something both men would recognize and want to see, put the canary behind the image link, and followed the requests. The choice of photograph was part of the method. Social engineering has an audience, even when the audience thinks it is running the show.
+
+The full account, the trail I followed, the conversations with police, and the challenge to Google are in [“The Duelist”](https://ghostintheprompt.com/articles/report-phishing-call-311). [“A Canary in the Group Chat”](https://ghostintheprompt.com/articles/any-confession-is-a-canary) covers the image-link side. The private photo and incident records stay private.
 
 ## On the workbench
 
@@ -28,7 +32,7 @@ The local prototype uses encrypted event storage, an authenticated console and p
 
 The ledger records what the handler saw. Identity, human viewing, attribution, provider action and victim outcome remain unknown unless separate evidence establishes them. Stop and expiry must prevent new collection. Retention must delete retained application records. An export keeps its unknowns attached.
 
-No email is imported. No complaint is submitted to Google. No payload is sent to a model. The private incident's attribution is not independently verified by this public prototype.
+This local prototype imports no email, submits no complaint to Google, and sends no payload to a model. The assessment separates request evidence from attribution.
 
 For a live exercise, keep the environment, methods, test window, covered participants, handling rules and stop condition in the engagement scope. The public examples are synthetic. The older private implementation and its image are not part of this repository.
 
@@ -41,4 +45,4 @@ For a live exercise, keep the environment, methods, test window, covered partici
 
 Implementation, test results and a runnable demonstration follow in the next code update. Until then, treat the repository as a development preview.
 
-**GhostInThePrompt.com** // *Two fetches earn two entries. The culprit needs more evidence.*
+**GhostInThePrompt.com** // *Aò, stavorta abbocchi te.*
