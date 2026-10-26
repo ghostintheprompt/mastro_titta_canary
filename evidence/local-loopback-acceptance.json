@@ -1,0 +1,16 @@
+{
+  "evidenceKind": "synthetic-client-real-loopback-HTTP",
+  "passed": true,
+  "checkedAt": "2026-10-26T14:33:34.094Z",
+  "routeCounts": {
+    "requests": 4,
+    "metadata": 1,
+    "images": 2,
+    "callbacks": 1
+  },
+  "stopRejectedLaterRequest": true,
+  "purgeRemovedRunAndEvents": true,
+  "identity": "UNKNOWN",
+  "providerAction": "UNKNOWN",
+  "externalMessagingOrVLMIntegration": "NOT_TESTED"
+}

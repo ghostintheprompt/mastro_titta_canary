@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "mastro-titta-report/v1",
+  "exportedAt": "2026-10-26T14:33:34.090Z",
+  "evidenceKind": "origin-handler-observations",
+  "run": {
+    "id": "e53b5b8e-f0d2-4fe6-81be-4cf2222c9dae",
+    "title": "Synthetic local HTTP demonstration",
+    "createdAt": "2026-10-26T14:33:34.073Z",
+    "expiresAt": "2026-10-26T14:38:34.074Z",
+    "retentionUntil": "2026-10-26T15:33:34.074Z",
+    "status": "stopped"
+  },
+  "events": [
+    {
+      "run_id": "e53b5b8e-f0d2-4fe6-81be-4cf2222c9dae",
+      "event_id": "9dec8f32-9da9-4a14-9eea-7be68412fe59",
+      "event_type": "metadata_page",
+      "observed_at": "2026-10-26T14:33:34.078Z",
+      "route_version": "1",
+      "test_case": "metadata-fetch"
+    },
+    {
+      "run_id": "e53b5b8e-f0d2-4fe6-81be-4cf2222c9dae",
+      "event_id": "2081d016-197d-486b-a0e3-24e5a54fa8ed",
+      "event_type": "image_asset",
+      "observed_at": "2026-10-26T14:33:34.080Z",
+      "route_version": "1",
+      "test_case": "image-fetch"
+    },
+    {
+      "run_id": "e53b5b8e-f0d2-4fe6-81be-4cf2222c9dae",
+      "event_id": "dfbdf263-07ba-4bc9-8347-0eeb513a725c",
+      "event_type": "image_asset",
+      "observed_at": "2026-10-26T14:33:34.082Z",
+      "route_version": "1",
+      "test_case": "image-fetch"
+    },
+    {
+      "run_id": "e53b5b8e-f0d2-4fe6-81be-4cf2222c9dae",
+      "event_id": "378fb209-0b34-4289-a6fd-b760e6bdd4e3",
+      "event_type": "vlm_callback",
+      "observed_at": "2026-10-26T14:33:34.084Z",
+      "route_version": "1",
+      "test_case": "controlled-callback"
+    }
+  ],
+  "summary": {
+    "requests": 4,
+    "metadata": 1,
+    "images": 2,
+    "callbacks": 1
+  },
+  "unknowns": {
+    "humanView": "UNKNOWN",
+    "identity": "UNKNOWN",
+    "attribution": "UNKNOWN",
+    "providerAction": "UNKNOWN",
+    "victimOutcome": "UNKNOWN"
+  },
+  "coverage": "Only requests reaching this handler. A callback does not establish that a VLM caused it. No platform integration or identity inference."
+}

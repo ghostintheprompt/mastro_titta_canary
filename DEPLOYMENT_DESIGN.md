@@ -1,5 +1,11 @@
 # Deployment Design
 
+## Implementation checkpoint: October 26, 2026
+
+The repository now contains a loopback Node prototype: scoped run tokens, page/image/callback routes, an authenticated console, encrypted application state, retention, stop/purge controls and JSON reports. Fourteen automated test groups and the recorded local HTTP demonstration pass. The console was also exercised in a real browser. See README for current entry points and `evidence/` for the synthetic-client loopback record.
+
+The architecture below remains the target for a controlled hosted deployment. The local prototype defaults to 24-hour retention (configurable up to 14 days), keeps a demonstration key beside its ciphertext unless an external key is supplied, and does not integrate a messaging platform, a VLM or Google reporting. The formal engagement envelope stays external to this version. Provider-log configuration and production key custody are deployment work.
+
 ## Goal
 
 Build a deployable canary test service for authorized red-team exercises. It

@@ -1,0 +1,8 @@
+node_modules/
+.mastro-state/
+.env
+.env.*
+artifacts/
+*.log
+.DS_Store
+private-archive/

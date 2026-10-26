@@ -95,3 +95,10 @@ The operator must account for hosting-provider logs as well as application
 logs. Domain ownership is not blanket visitor authorization. Notice, consent,
 privacy, and communications requirements depend on the deployment and
 jurisdiction; obtain qualified review for the actual test.
+
+
+## Implementation evidence, October 26, 2026
+
+The loopback implementation now exercises the route and evidence boundary in code. Its event schema excludes network/client identifiers. Tests cover repeat requests, token/route rejection, stop, expiry, retention, authenticated export, ciphertext tampering, external state changes, absent keys, Host/origin checks and single-writer operation. Fourteen test groups pass. The recorded demonstration in `evidence/` uses synthetic clients against a real local HTTP server: one metadata fetch, two image fetches and one callback, followed by stop and purge checks.
+
+A browser run separately produced page and image events, downloaded JSON and confirmed that a stopped route returned inactive. No platform cache, external messaging service, VLM causation or provider response was established. The supplied authored network/client fixtures remain distinct from the current minimal event schema.

@@ -1,0 +1,1 @@
+{"name":"mastro-titta-canary","version":"0.1.0","private":true,"type":"module","description":"Local controlled request-path evidence prototype","engines":{"node":">=22"},"scripts":{"start":"node server.mjs","test":"node --test --test-timeout=15000 test/*.test.mjs","demo":"node scripts/demo.mjs"},"license":"MIT"}
