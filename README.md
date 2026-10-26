@@ -1,64 +1,44 @@
-<p align="center">
-  <img src="icon.png" alt="Mastro Titta above the Tiber in Rome, with birds over the bridge" width="360">
-</p>
+<p align="center"><img src="icon-v2.png" alt="Hooded Mastro Titta beside the Tevere, axe at rest, with Rome and canaries at dusk" width="480"></p>
 
-# mastro_titta_canary
+# Mastro Titta Canary
 
-**Authorized red-team testing for image-link request paths and the evidence they produce.**
+### Silenzio. The ledger is open.
 
-## Why I built it
+I keep an axe beside the Tevere. It has excellent uptime. The paperwork takes longer.
 
-An older family member was socially engineered and suffered identity theft.
-He asked me to help identify the person responsible. I put a canary in an
-Alessandro Nesta image shared in a private chat and watched the requests reach
-the endpoint. I believed the trail led to the thief. He told me not to break
-the law. I stopped.
+An image is fetched twice. I enter two requests. Anyone demanding two culprits can take a number.
 
-His name and title stay private. The account is mine; the attribution was not
-independently verified.
+**Prototype in active development.** The public checkout currently contains the assessment, deployment design, synthetic observations and new artwork. A runnable local collector and operator console are being tested before the implementation lands here. No production deployment or live messaging-platform result is claimed.
 
-## What the work tests
+## The story belongs to The Duelist
 
-An image link crosses several trust boundaries: the sharing client, the
-messaging service, preview infrastructure, caches or relays, and the endpoint.
-This project examines what each request path reveals, how those observations
-can be tested, and where the evidence stops.
+Someone hurt an older person in my family. I placed canaries after the scam and followed a trail. The account, the conclusions I drew, the conversations with police, and the challenge to Google are in [“The Duelist”](https://ghostintheprompt.com/articles/report-phishing-call-311). [“A Canary in the Group Chat”](https://ghostintheprompt.com/articles/any-confession-is-a-canary) covers the image-link side.
 
-The [synthetic fixture](fixtures/synthetic_observations.json) gives reviewers
-known inputs. The [assessment](ASSESSMENT.md) records the threat model and
-evidence analysis. The [deployment design](DEPLOYMENT_DESIGN.md) turns that
-analysis into a controlled test architecture, including an isolated image
-payload test against an in-scope VLM.
+This companion makes the request evidence inspectable. A preview service, a relay, a retry and a direct open can all reach an endpoint. The record has to preserve those possibilities. A timestamp does not acquire a face because somebody wants a suspect.
 
-## Current status
+## On the workbench
 
-The public repository contains the case study, synthetic fixture, and
-deployment design. It does not yet contain a deployable collector or claim
-results from a live platform. The next implementation should meet the
-acceptance criteria in the deployment design before its behavior is described
-as verified.
+The implementation under test runs on loopback, with an operator-only console and one revocable token per controlled run. Planned cases cover the metadata page, preview image, repeated fetch, callback route, stop, expiry and deletion. The callback records a request reaching its handler. VLM causation still needs independent evidence.
 
-## Operating scope
+Application events contain the run ID, event ID, route class, server timestamp, route version and test case. Source IP, forwarded-address headers, user-agent, precise location, device signatures and recipient maps stay out of that event schema.
 
-Run live tests under written authorization with a named environment, test
-window, approved participants or systems, and a defined stop condition. A
-blind exercise can preserve realism when the engagement authorizes it and
-participants are covered by the exercise rules. The collector is designed to
-record test events, not build identities from people.
+The local prototype uses encrypted event storage, an authenticated console and private exports. Its default demonstration key sits beside the ciphertext; production key custody is separate work. The deployment design names further controls that need their own implementation and review.
 
-Domain ownership alone does not authorize monitoring every visitor. Define
-notice, consent, data handling, and applicable legal review for the actual
-deployment and jurisdiction before collecting real visitor data.
+## The clerk's rules
 
-## Related work
+The ledger records what the handler saw. Identity, human viewing, attribution, provider action and victim outcome remain unknown unless separate evidence establishes them. Stop and expiry must prevent new collection. Retention must delete retained application records. An export keeps its unknowns attached.
 
-[image_payload_injection](https://github.com/ghostintheprompt/image_payload_injection)
-tests image-borne payloads and VLM defenses. This project covers the request
-and evidence side. The deployment design joins those test surfaces only inside
-an isolated, authorized lab.
+No email is imported. No complaint is submitted to Google. No payload is sent to a model. The private incident's attribution is not independently verified by this public prototype.
 
-## Background
+For a live exercise, keep the environment, methods, test window, covered participants, handling rules and stop condition in the engagement scope. The public examples are synthetic. The older private implementation and its image are not part of this repository.
 
-The personal account and the motivation behind this work are explained in
-[“A Canary in the Group Chat”](https://ghostintheprompt.com/articles/any-confession-is-a-canary)
-and [“The Duelist”](https://ghostintheprompt.com/articles/report-phishing-call-311).
+## Read the file before sharpening the axe
+
+- [Assessment](ASSESSMENT.md): request paths, trust boundaries and the limits of attribution.
+- [Deployment design](DEPLOYMENT_DESIGN.md): the target architecture and its acceptance criteria. Design requirements are not completed features.
+- [Synthetic observations](fixtures/synthetic_observations.json): authored examples, including documentation-only network addresses. They are not collected visitor records.
+- [Related image-payload work](https://github.com/ghostintheprompt/image_payload_injection): a separate VLM test surface, not an integration claimed by this prototype.
+
+Implementation, test results and a runnable demonstration follow in the next code update. Until then, treat the repository as a development preview.
+
+**GhostInThePrompt.com** // *Two fetches earn two entries. The culprit needs more evidence.*
