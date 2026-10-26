@@ -8,11 +8,11 @@
 
 ## Why I built it
 
-My dad was socially engineered and had his identity stolen. He asked me to
-catch the person responsible. I put a canary in an Alessandro Nesta image
-shared in our family chat and watched the requests reach the endpoint. I
-believed the trail led to the thief. Dad told me not to break the law. I
-stopped.
+An older family member was socially engineered and suffered identity theft.
+He asked me to help identify the person responsible. I put a canary in an
+Alessandro Nesta image shared in a private chat and watched the requests reach
+the endpoint. I believed the trail led to the thief. He told me not to break
+the law. I stopped.
 
 His name and title stay private. The account is mine; the attribution was not
 independently verified.
@@ -56,7 +56,3 @@ deployment and jurisdiction before collecting real visitor data.
 tests image-borne payloads and VLM defenses. This project covers the request
 and evidence side. The deployment design joins those test surfaces only inside
 an isolated, authorized lab.
-
-The personal account and technical reflection also appear in
-[“A Canary in the Group Chat”](https://ghostintheprompt.com/articles/any-confession-is-a-canary)
-and [“The Duelist”](https://ghostintheprompt.com/articles/report-phishing-call-311).
