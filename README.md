@@ -1,5 +1,9 @@
 # mastro_titta_canary
 
+<p align="center">
+  <img src="icon.png" alt="Mastro Titta overlooking the Tiber in Rome, with birds in flight" width="320">
+</p>
+
 A non-deployable red-team case study on link-preview observability, evidence
 quality, and privacy-preserving security testing.
 
