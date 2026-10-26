@@ -4,52 +4,58 @@
 
 # mastro_titta_canary
 
-**A red-team case study in image links, request evidence, and attribution.**
+**Authorized red-team testing for image-link request paths and the evidence they produce.**
 
 ## Why I built it
 
 My dad was socially engineered and had his identity stolen. He asked me to
 catch the person responsible. I put a canary in an Alessandro Nesta image
 shared in our family chat and watched the requests reach the endpoint. I
-believed the trail led to him. Dad told me not to break the law. I stopped.
+believed the trail led to the thief. Dad told me not to break the law. I
+stopped.
 
-His name and title stay private. My account of the trail is not independently
-verified attribution.
+His name and title stay private. The account is mine; the attribution was not
+independently verified.
 
-## What the records can show
+## What the work tests
 
-A request shows that a client or intermediary reached an endpoint. It does
-not identify who caused the request, establish that someone saw the image, or
-show intent. Preview services, caches, relays, shared networks, and
-client-supplied fields all affect how a request should be read.
+An image link crosses several trust boundaries: the sharing client, the
+messaging service, preview infrastructure, caches or relays, and the endpoint.
+This project examines what each request path reveals, how those observations
+can be tested, and where the evidence stops.
 
 The [synthetic fixture](fixtures/synthetic_observations.json) gives reviewers
-examples to reason through. The [assessment](ASSESSMENT.md) lays out the
-request path, trust boundaries, and evidence limits. The examples are invented;
-they are not incident records. I have not tested how a live platform handles
-these requests or independently verified an identity.
+known inputs. The [assessment](ASSESSMENT.md) records the threat model and
+evidence analysis. The [deployment design](DEPLOYMENT_DESIGN.md) turns that
+analysis into a controlled test architecture, including an isolated image
+payload test against an in-scope VLM.
 
-## Red-team work
+## Current status
 
-This write-up records my review of the request path, the telemetry's
-assumptions, and the gap between an observation and an attribution. The private
-implementation, image, and incident records are not in this repository.
+The public repository contains the case study, synthetic fixture, and
+deployment design. It does not yet contain a deployable collector or claim
+results from a live platform. The next implementation should meet the
+acceptance criteria in the deployment design before its behavior is described
+as verified.
 
-## Scope
+## Operating scope
 
-The fixture is for offline analysis. Live testing requires authorized systems,
-synthetic requests, and participants who agreed to take part. Site ownership
-alone does not establish visitor consent or determine whether tracking is
-lawful. Requirements vary by test and jurisdiction; get qualified privacy and
-legal review before collecting visitor data. I have not assessed the legality
-of any specific deployment.
+Run live tests under written authorization with a named environment, test
+window, approved participants or systems, and a defined stop condition. A
+blind exercise can preserve realism when the engagement authorizes it and
+participants are covered by the exercise rules. The collector is designed to
+record test events, not build identities from people.
+
+Domain ownership alone does not authorize monitoring every visitor. Define
+notice, consent, data handling, and applicable legal review for the actual
+deployment and jurisdiction before collecting real visitor data.
 
 ## Related work
 
 [image_payload_injection](https://github.com/ghostintheprompt/image_payload_injection)
-tests image-borne payloads and VLM defenses. This case study examines the
-request evidence that can follow an image share. The public projects do not
-join those parts into a live tracking chain.
+tests image-borne payloads and VLM defenses. This project covers the request
+and evidence side. The deployment design joins those test surfaces only inside
+an isolated, authorized lab.
 
 The personal account and technical reflection also appear in
 [“A Canary in the Group Chat”](https://ghostintheprompt.com/articles/any-confession-is-a-canary)
