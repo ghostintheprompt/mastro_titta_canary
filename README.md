@@ -56,3 +56,9 @@ deployment and jurisdiction before collecting real visitor data.
 tests image-borne payloads and VLM defenses. This project covers the request
 and evidence side. The deployment design joins those test surfaces only inside
 an isolated, authorized lab.
+
+## Background
+
+The personal account and the motivation behind this work are explained in
+[“A Canary in the Group Chat”](https://ghostintheprompt.com/articles/any-confession-is-a-canary)
+and [“The Duelist”](https://ghostintheprompt.com/articles/report-phishing-call-311).
