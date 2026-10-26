@@ -1,0 +1,42 @@
+{
+  "notice": "Synthetic discussion fixture only. No real person, request, service, or incident is represented.",
+  "observations": [
+    {
+      "event": "synthetic-001",
+      "timestamp": "2026-01-15T12:00:00Z",
+      "request_path": "preview-image",
+      "network": "192.0.2.10",
+      "client_hint": "ExampleClient/1.0",
+      "what_is_observed": "A request-like event contains these supplied example values.",
+      "what_remains_unknown": [
+        "whether a person saw the image",
+        "which person initiated or received the request",
+        "whether a preview service or intermediary made the request"
+      ]
+    },
+    {
+      "event": "synthetic-002",
+      "timestamp": "2026-01-15T12:03:00Z",
+      "request_path": "preview-image",
+      "network": "198.51.100.23",
+      "client_hint": "ExampleClient/1.0",
+      "what_is_observed": "The client-provided example string matches synthetic-001; the example network value differs.",
+      "what_remains_unknown": [
+        "whether the same device or person was involved",
+        "whether the network difference reflects a relay, shared service, or unrelated request"
+      ]
+    },
+    {
+      "event": "synthetic-003",
+      "timestamp": "2026-01-15T12:04:00Z",
+      "request_path": "page",
+      "network": "203.0.113.7",
+      "client_hint": "ExampleClient/2.0",
+      "what_is_observed": "A separate synthetic request has a different example client string.",
+      "what_remains_unknown": [
+        "whether it was a person, an automated service, or an intermediary",
+        "whether it is related to either earlier event"
+      ]
+    }
+  ]
+}
